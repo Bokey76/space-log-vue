@@ -1,0 +1,31 @@
+// 工具栏icon
+.md-editor-toolbar-item .md-editor-icon {
+    height: 5rem ;
+    width: 3rem ;
+    line-height: 5rem;
+}
+// 底部页脚
+#editorBox .md-editor-footer {
+    font-size: 1.5rem;
+    height: auto;
+    padding: .5rem;
+
+    .md-editor-checkbox {
+        height: auto;
+        width: auto;
+    }
+}
+// 表情工具
+.emoji-container .emojis {
+    width: 80rem;
+
+    li {
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        margin: 0;
+        padding: 0;
+        font-size: 2.5rem;
+    }
+    
+}

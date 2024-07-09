@@ -1,24 +1,15 @@
-# vue3
+# Sapce log Vue
+> 这是一个使用Vue3搭建的博客后台管理系统
 
-## Project setup
+## 🔥启动RUN
+启动开发环境：
+```shell
+npm run serve:dev
 ```
-npm install
-```
+启动正式环境：
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+```shell
+npm run serve:pro
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

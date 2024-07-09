@@ -1,0 +1,11 @@
+// 对一些固定标签样式的重设...
+ul {
+    list-style: none; // 去除列表小圆点
+}
+a {
+    text-decoration: none; // 去除a标签下划线
+    color: black; // 更改a标签的默认颜色(蓝色)为全局变量的 $color-text
+}
+html {
+    font-size: 10px;
+}

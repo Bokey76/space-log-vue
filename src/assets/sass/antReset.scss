@@ -1,0 +1,87 @@
+// ant组件库的全局样式修改
+@import './variable.scss'; // 引入变量
+
+// 布局组件
+.ant-layout {
+
+    .ant-layout-header {
+        background-color: $main-background-color;
+    }
+
+}
+
+// 导航栏组件
+.ant-layout-header {
+
+    // 背景颜色
+    .ant-menu-light{ 
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    // 排列居中
+    .ant-menu-overflow {
+        justify-content: center;
+    }
+
+    // 选中导航文本颜色
+    .ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected {
+        color: $main-text-color;
+    }
+
+    // 选中及hover的border-bottom颜色
+    .ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after,.ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after {
+        border-bottom-color: $main-text-color;
+    }
+}
+
+// 分割线
+.ant-divider-horizontal {
+    margin: 1rem 0;
+}
+
+// 输入框
+.ant-input {
+    &:hover {
+        border-color: $main-text-color;
+    }
+}
+
+// 分页
+.ant-pagination .ant-pagination-item-active {
+
+    border-color: $main-text-color;
+    &:hover {
+        border-color: $main-text-color;
+        a {
+            color: $main-text-color;
+        }
+    }
+    a {
+        color: $main-text-color;
+    }
+}
+
+// 表格扩展
+.ant-table-wrapper .ant-table-row-expand-icon:hover ,.ant-table-wrapper .ant-table-row-expand-icon:focus{
+    color: $main-text-color;
+}
+
+// a标签
+a:hover {
+    color: $main-text-color;
+}
+
+// 按钮
+.ant-btn-primary {
+    background-color: $main-text-color;
+}
+.ant-btn-primary:not(:disabled):hover {
+    background-color: $main-text-color;
+}
+.ant-btn:not(:disabled):focus-visible { // 取消outline
+    outline: none;
+}
+.ant-btn-default:not(:disabled):hover {
+    color: $main-text-color;
+    border-color: $main-text-color;
+}

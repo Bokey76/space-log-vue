@@ -1,0 +1,3 @@
+NODE_ENV = 'pro'
+VUE_APP_BASE_URL = localhost:3030
+VUE_APP_OSS_IMAGE_BASE_URL = xxx
