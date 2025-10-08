@@ -42,7 +42,7 @@ module.exports = defineConfig({
   },
   // 关闭全屏报错覆盖
   devServer: {
-    port: process.env.VUE_APP_PROD_PORT || 8080,
+    port: process.env.VUE_APP_PORT || 8080,
     client: {
       overlay: false,
     },
