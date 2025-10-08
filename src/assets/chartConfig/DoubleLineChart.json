@@ -1,0 +1,72 @@
+{
+    "title": {
+        "text": "双线折线图标题",
+        "textStyle": {
+            "fontStyle": "italic",
+            "fontWeight": "normal",
+            "color": "#808080"
+        },
+        "top": "top",
+        "left": "center"
+    },
+    "tooltip": {
+        "trigger": "axis"
+    },
+    "dataset": [
+        {
+            "id": "dataset_raw",
+            "source": []
+        }
+    ],
+    "xAxis": {
+        "name": "x轴name",
+        "type": "category",
+        "nameLocation": "end",
+        "textStyle": {
+            "color": "#808080"
+        },
+        "axisLine": {
+            "alignWithLabel": true
+        },
+        "axisLabel": {
+            "interval": 0,
+            "rotate": 45
+        },
+        "axisTick": {
+            "show": false
+        }
+    },
+    "yAxis": {
+        "name": "y轴name"
+    },
+    "series": [
+        {
+            "type": "line",
+            "encode": {
+                "x": "x",
+                "y": "y1"
+            },
+            "smooth": true,
+            "lineStyle": {
+                "color": "#f6be3d"
+            },
+            "itemStyle": {
+                "color": "#f6be3d"
+            }
+        },
+        {
+            "type": "line",
+            "encode": {
+                "x": "x",
+                "y": "y2"
+            },
+            "smooth": true,
+            "lineStyle": {
+                "color": "#619cef"
+            },
+            "itemStyle": {
+                "color": "#619cef"
+            }
+        }
+    ]
+}

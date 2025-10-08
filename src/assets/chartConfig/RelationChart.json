@@ -1,0 +1,42 @@
+{
+    "title": {
+      "text": "关系图标题",
+      "textStyle": {
+        "fontStyle": "italic",
+        "fontWeight": "normal",
+        "color": "#808080"
+      },
+      "top": "top",
+      "left": "center"
+    },
+    "tooltip": {
+      "trigger": "item"
+    },
+    "legend": {
+      "bottom": "5%",
+      "left": "center",
+      "textStyle": {
+        "color": "#808080"
+      }
+    },
+    "series": [
+      {
+        "name": "",
+        "type": "graph",
+        "layout": "force",
+        "roam": true,
+        "force": {
+            "repulsion": 200,
+            "edgeLength": [40, 100]
+        },
+        "label": {
+            "position": "inside",
+            "show": true
+        },
+        "data": [],
+        "categories": [],
+        "links": []
+      }
+    ]
+  }
+  

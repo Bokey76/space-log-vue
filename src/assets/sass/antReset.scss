@@ -1,0 +1,443 @@
+// ant组件库的全局样式修改
+// @import './variable.scss'; // 引入变量
+
+// 布局组件
+.ant-layout {
+
+    background-color: $main-background-color;
+
+    .ant-layout-header {
+        background-color: $main-background-color;
+    }
+
+
+}
+
+// 导航栏组件
+.ant-layout-header {
+
+    // 背景颜色
+    .ant-menu-light{ 
+        background-color: $main-background-color;
+        color: $main-text-color;
+    }
+
+    .ant-menu-light .ant-menu-item:hover {
+        color: $secondary-text-color !important;
+    }
+
+    // 排列居中
+    .ant-menu-overflow {
+        // justify-content: center;
+    }
+
+    // 选中导航文本颜色
+    .ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected {
+        color: $main-text-color;
+    }
+
+    // 选中及hover的border-bottom颜色
+    .ant-menu-light.ant-menu-horizontal >.ant-menu-item-selected::after,.ant-menu-light.ant-menu-horizontal >.ant-menu-item:hover::after {
+        border-bottom-color: $main-text-color;
+    }
+}
+
+// menu
+.ant-menu-horizontal {
+    border-bottom: 0;
+}
+
+// 分割线
+.ant-divider-horizontal {
+    margin: 1rem 0;
+}
+
+// 输入框
+.ant-input {
+    &:hover {
+        border-color: $main-text-color;
+    }
+}
+
+// 分页
+.ant-pagination .ant-pagination-item-active {
+
+    border-color: $main-text-color;
+    &:hover {
+        border-color: $main-text-color;
+        a {
+            color: $main-text-color;
+        }
+    }
+    a {
+        color: $main-text-color;
+    }
+}
+
+// 表格扩展
+.ant-table-wrapper .ant-table-row-expand-icon:hover ,.ant-table-wrapper .ant-table-row-expand-icon:focus{
+    color: $main-text-color;
+}
+
+// a标签
+a:hover {
+    color: $main-text-color;
+}
+
+// 按钮
+.ant-btn-primary {
+    background-color: $main-text-color;
+    color: $main-background-color;
+}
+.ant-btn-primary:not(:disabled):hover {
+    background-color: $main-text-color;
+    // color: $main-background-color;
+}
+.ant-btn:not(:disabled):focus-visible { // 取消outline
+    outline: none;
+}
+.ant-btn-default:not(:disabled):hover {
+    color: $main-text-color;
+    border-color: $main-text-color;
+}
+.ant-btn-default:disabled {
+    color: $secondary-text-color;
+}
+.ant-btn-default {
+    background-color: $main-car-color;
+    color: $main-text-color;
+}
+.ant-modal-confirm-btns {
+    .ant-btn-primary {
+        color: $main-background-color;
+        &:hover {
+            color: $main-background-color;
+        }
+    }
+}
+// btn
+.ant-btn {
+    color: $main-text-color;
+}
+.ant-btn-text:not(:disabled):hover {
+    color: $main-text-color;
+    background-color: $secondary-car-color;
+}
+
+// 日期选择器picker
+.ant-picker{ 
+    .ant-picker-input >input:placeholder-shown {
+        text-align: center;
+    }
+    &:hover {
+        border-color: $main-text-color;
+    }
+}
+.ant-picker-focused {
+    border-color: $main-text-color;
+}
+.ant-picker-range .ant-picker-active-bar {
+    background: $main-text-color;
+}
+
+// selector
+.ant-select-multiple .ant-select-selection-item {
+    background-color: $main-car-color;
+}
+.ant-select-selection-item-remove {
+    display: flex !important;
+}
+.ant-select-single.ant-select-open .ant-select-selection-item {
+    color: $main-text-color;
+}
+// card
+.ant-card {
+    background-color: $main-car-color;
+    color: $main-text-color;
+
+    .ant-card-head {
+        color: $main-text-color;
+ 
+    }
+}
+
+//statistic
+.ant-statistic {
+    color: $main-text-color;
+
+    .ant-statistic-title {
+        color: $main-text-color;
+    }
+
+    .ant-statistic-content {
+        color: $main-text-color;
+    }
+}
+
+// picker
+.ant-picker {
+    background-color: $main-car-color;
+    color: $main-text-color;
+    .ant-picker-separator {
+        color: $main-text-color;
+    }
+
+    .ant-picker-clear {
+        background: $main-car-color;
+        color: $main-text-color;
+    }
+}
+.ant-picker-range:hover .ant-picker-clear {
+    color: $secondary-text-color;
+}
+
+// layout
+.ant-layout .ant-layout-header {
+    padding-inline: 0;
+}
+
+// segmented
+.ant-segmented {
+    background-color: $main-car-color;
+    color: $main-text-color;
+    .ant-segmented-item-selected {
+        background-color: $secondary-car-color;
+        color: $main-text-color;
+    }
+    .ant-segmented-item:hover:not(.ant-segmented-item-selected):not(.ant-segmented-item-disabled) {
+        color: $secondary-text-color;
+    }
+}
+
+// checkbox-wrapper
+.ant-checkbox-wrapper {
+    color: $main-text-color;
+}
+
+// select
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: $main-car-color;
+    color: $main-text-color;
+
+    .ant-select-selection-placeholder {
+        color: $main-text-color;
+    }
+}
+.ant-select-selector {
+    border-color: $main-text-color !important; // !强制focus不变色
+}
+
+// 所有的input！
+input {
+    color: $main-text-color !important;
+    background-color: transparent !important;
+    &::placeholder {
+        color: $main-text-color !important;
+    }
+}
+
+// input
+.ant-input {
+    color: $main-text-color;
+    background-color: $main-background-color;
+    &::placeholder {
+        color: $main-text-color;
+    }
+    &:focus {
+        border-color: $main-text-color;
+    }
+}
+
+// anticon
+.anticon {
+    color: $main-text-color;
+}
+.ant-modal-footer {
+    .ant-btn-primary {
+        color: $main-background-color;
+
+        &:hover {
+            color: $main-background-color;
+        }
+    }
+}
+
+// table
+.ant-table-wrapper {
+
+    .ant-table-thead >tr>th {
+        background-color: $secondary-car-color;
+        color: $main-text-color;
+    }
+
+    .ant-table {
+        background: $main-car-color;
+        color: $main-text-color;
+    }
+
+    .ant-table-tbody >tr.ant-table-row:hover>td {
+        background-color: $secondary-car-color;
+        background: $secondary-car-color;
+    }
+}
+
+// pagination
+.ant-pagination {
+    color: $main-text-color;
+
+    .ant-pagination-item-active {
+        background-color: $secondary-car-color;
+    }
+
+    .ant-pagination-disabled .ant-pagination-item-link {
+        color: $secondary-text-color;
+    }
+
+    .ant-pagination-item a {
+        color:$secondary-text-color;
+    }
+
+    .ant-pagination-prev button,.ant-pagination-next button {
+        color: $main-text-color;
+    }
+    .ant-pagination-next, .ant-pagination-disabled,.ant-pagination-prev { 
+        .ant-pagination-item-link {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+// breadcrumb 
+.ant-breadcrumb .ant-breadcrumb-separator {
+    color:$main-text-color;
+}
+.ant-breadcrumb a:hover {
+    background-color: $secondary-car-color;
+}
+
+// list
+.ant-list-vertical .ant-list-item .ant-list-item-meta {
+    margin-block-end: 0px;
+    .ant-list-item-meta-title {
+        color: $main-text-color;
+    }
+}
+.ant-list .ant-list-item .ant-list-item-meta .ant-list-item-meta-title {
+    color: $main-text-color;
+}
+.ant-list-bordered .ant-list-item {
+    padding-inline: 15rem;
+}
+.ant-list-split .ant-list-item {
+    border-block-end: 1px solid #d9d9d9;
+}
+// descriptions
+.ant-descriptions {
+    .ant-descriptions-item-label,.ant-descriptions-item-content {
+        color: $main-text-color;
+    }
+}
+
+// modal
+.ant-modal .ant-modal-content {
+    color: $main-text-color;
+    background-color: $main-car-color;
+    .ant-modal-header {
+        background: $main-car-color;
+    }
+    .ant-modal-title {
+        color: $main-text-color;
+    }
+}
+.ant-modal-confirm .ant-modal-confirm-body .ant-modal-confirm-content {
+    color: $main-text-color;
+}
+
+// modal-confirm
+.ant-modal-confirm { 
+    .ant-modal-confirm-body .ant-modal-confirm-title {
+        color:  $main-text-color;
+    }
+}
+
+// form
+.ant-form-item {
+    .ant-form-item-label >label {
+        color: $main-text-color;
+    }
+}
+
+// dropdown
+.ant-select-dropdown {
+    .ant-input {
+        color: rgba(0, 0, 0, 0.88) !important;
+        background-color: #ffffff;
+        &::placeholder {
+            color: rgba(0, 0, 0, 0.88) !important;
+        }
+        &:focus {
+            border-color: rgba(0, 0, 0, 0.88);
+        }
+    }
+    .ant-btn {
+        color: #ffffff !important;
+        background-color: rgba(0, 0, 0, 0.88);
+    }
+}
+
+// notification
+.ant-notification-notice {
+    .anticon {
+        color: rgba(0, 0, 0, 0.88);
+    }
+}
+
+// card
+.ant-card {
+    .ant-card-grid {
+        box-shadow: 1px 0 0 0 $secondary-car-color,0 1px 0 0 $secondary-car-color,1px 1px 0 0 $secondary-car-color,1px 0 0 0 $secondary-car-color inset,0 1px 0 0 $secondary-car-color inset;
+        &:hover {
+            box-shadow:  0px 0px 0px 0px $secondary-text-color, 0px 0px 1px 0 $secondary-text-color, 0 0 10px 2px $secondary-text-color;
+        }
+    }
+}
+.ant-card-bordered {
+    border: none !important;
+}
+
+// empty
+.ant-empty-normal {
+    color: $main-text-color;
+}
+
+// tag
+.ant-tag-default {
+    color:  $main-text-color;
+}
+
+// drawer
+.ant-drawer{
+    .ant-drawer-content {
+        background: $main-car-color;
+        .ant-drawer-title,.ant-drawer-close {
+            color: $main-text-color;
+        }
+    }
+    .ant-drawer-body {
+        color: $main-text-color;
+    }
+}
+
+// form
+.ant-form-item {
+    color: $main-text-color;
+}
+
+// picker
+.ant-picker-dropdown {
+    .ant-btn {
+       color: #fff; 
+    }  
+}

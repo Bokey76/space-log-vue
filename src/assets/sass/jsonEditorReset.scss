@@ -1,0 +1,28 @@
+.jsoneditor {
+    border-color: $secondary-car-color !important;
+    // color: $main-text-color !important;
+}
+.jsoneditor-menu {
+    // color: $main-text-color !important;
+    background-color:$secondary-car-color !important;
+    border-block-color: $secondary-car-color !important;
+    a {
+        color: $main-text-color !important;
+    }
+}
+.jsoneditor-menu>.jsoneditor-modes>button, .jsoneditor-menu>button,.full-screen {
+    background-color: #333333 !important;
+}
+
+.jsoneditor-modal .pico-modal-header {
+    background: $secondary-car-color !important;
+    color: $main-text-color !important;
+}
+
+.jsoneditor-modal input {
+    color: #333333 !important;
+}
+
+.jsoneditor-frame {
+    background-color: $secondary-car-color !important;
+}
