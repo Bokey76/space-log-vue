@@ -48,7 +48,7 @@
             :options="typeOptions.map(item => ({ label: item.theme, value: item.id }))" style="width: 15rem"
             placeholder="请选择类目">
           </a-select>
-          <span v-else>{{ typeOptions.find(item => item.id == record.typeId)?.theme || '未知' }}</span>
+          <span v-else>{{typeOptions.find(item => item.id == record.typeId)?.theme || '未知'}}</span>
         </template>
         <!-- 状态 -->
         <template v-if="column.key === 'status'">
@@ -64,12 +64,12 @@
         <!-- 时间展示格式化 -->
         <template v-if="column.key === 'createTime' || column.key === 'updatedTime'">
           {{ utils.formatDate(record[column.key]) }}
-        </template>         
+        </template>
         <!-- 编辑状态 -->
         <template v-if="currentColumn['id'] === record['id']">
           <!-- 文章标题 -->
           <a-input v-if="column.dataIndex === 'topic'" v-model:value="currentColumn.topic" placeholder="请输入文章主题" />
-          
+
         </template>
         <!-- 操作列 -->
         <template v-if="column.key === 'action'">
@@ -183,11 +183,11 @@ const pageChange = (page) => { // 页码改变事件
 }
 let currentColumn = reactive({}); // 当前列数据
 const getListData = (pageChangeOrNot) => { // 获取列表数据
-  if (!pageChangeOrNot) currentPage.value = 1 // 若不是换页操作，重置页码
-  proxy.$api.getArticleList([currentPage.value, pageSize.value]).then((res) => {
-    total.value = res.count
-    listData.value = res.rows;
-  });
+    if (!pageChangeOrNot) currentPage.value = 1 // 若不是换页操作，重置页码
+    proxy.$api.getArticleList([currentPage.value, pageSize.value]).then((res) => {
+      total.value = res.count
+      listData.value = res.rows;
+    })
 };
 let typeOptions = ref([]) // 类目下拉框选项数据
 const getArticleTypes = () => { // 获取文章类目数据
